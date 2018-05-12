@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1D9C887B-E727-438B-8977-A0E7363B1FC6}</ProjectGuid>
+    <RootNamespace>SampleTest</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>SpecularAA</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30128.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Configuration)\$(Platform)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProgramFiles)\Windows Kits\8.0\Include\um;$(ProgramFiles)\Windows Kits\8.0\Include\shared;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(FrameworkSDKDir)\include</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProgramFiles)\Windows Kits\8.0\Include\um;$(ProgramFiles)\Windows Kits\8.0\Include\shared;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(FrameworkSDKDir)\include</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;$(ProgramFiles)\Windows Kits\8.0\lib\win8\um\x64;$(OutputPath)</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;$(ProgramFiles)\Windows Kits\8.0\lib\win8\um\x64;$(OutputPath)</LibraryPath>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(VCInstallDir)bin\x86_amd64;$(VCInstallDir)bin;$(VSInstallDir)Common7\Tools\bin;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(FrameworkSDKDir)\lib\win64;$(MSBuildToolsPath32);$(FxCopDir);$(PATH)</ExecutablePath>
+    <ExcludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProgramFiles)\Windows Kits\8.0\Include\um;$(ProgramFiles)\Windows Kits\8.0\Include\shared;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(FrameworkSDKDir)\include;$(MSBuildToolsPath);$(MSBuildToolsPath32);$(VCInstallDir)atlmfc\lib\amd64;$(VCInstallDir)lib\amd64</ExcludePath>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(VCInstallDir)bin\x86_amd64;$(VCInstallDir)bin;$(VSInstallDir)Common7\Tools\bin;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(FrameworkSDKDir)\lib\win64;$(MSBuildToolsPath32);$(FxCopDir);$(PATH)</ExecutablePath>
+    <ExcludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProgramFiles)\Windows Kits\8.0\Include\um;$(ProgramFiles)\Windows Kits\8.0\Include\shared;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(FrameworkSDKDir)\include;$(MSBuildToolsPath);$(MSBuildToolsPath32);$(VCInstallDir)atlmfc\lib\amd64;$(VCInstallDir)lib\amd64</ExcludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>PCH.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PrecompiledHeaderFile>PCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AppSettings.cpp" />
+    <ClCompile Include="MeshRenderer.cpp" />
+    <ClCompile Include="SampleFramework11\App.cpp" />
+    <ClCompile Include="SampleFramework11\Assert.cpp" />
+    <ClCompile Include="SampleFramework11\Camera.cpp" />
+    <ClCompile Include="SampleFramework11\DDSTextureLoader.cpp" />
+    <ClCompile Include="SampleFramework11\DeviceStates.cpp" />
+    <ClCompile Include="SampleFramework11\DeviceManager.cpp" />
+    <ClCompile Include="SampleFramework11\DXErr.cpp" />
+    <ClCompile Include="SampleFramework11\FileIO.cpp" />
+    <ClCompile Include="SampleFramework11\GUIObject.cpp" />
+    <ClCompile Include="SampleFramework11\LodePNG\lodepng.cpp" />
+    <ClCompile Include="SampleFramework11\Math.cpp" />
+    <ClCompile Include="SampleFramework11\MurmurHash.cpp" />
+    <ClCompile Include="SampleFramework11\PostProcessorBase.cpp" />
+    <ClCompile Include="SampleFramework11\Profiler.cpp" />
+    <ClCompile Include="SampleFramework11\SDKmesh.cpp" />
+    <ClCompile Include="SampleFramework11\SH.cpp" />
+    <ClCompile Include="SampleFramework11\Skybox.cpp" />
+    <ClCompile Include="SampleFramework11\Slider.cpp" />
+    <ClCompile Include="SampleFramework11\SpriteFont.cpp" />
+    <ClCompile Include="SampleFramework11\GraphicsTypes.cpp" />
+    <ClCompile Include="SampleFramework11\Input.cpp" />
+    <ClCompile Include="SampleFramework11\Model.cpp" />
+    <ClCompile Include="SampleFramework11\PCH.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="SampleFramework11\ShaderCompilation.cpp" />
+    <ClCompile Include="SampleFramework11\SpriteRenderer.cpp" />
+    <ClCompile Include="SampleFramework11\TextGUI.cpp" />
+    <ClCompile Include="SampleFramework11\Timer.cpp" />
+    <ClCompile Include="SampleFramework11\Utility.cpp" />
+    <ClCompile Include="SampleFramework11\WICTextureLoader.cpp" />
+    <ClCompile Include="SampleFramework11\Window.cpp" />
+    <ClCompile Include="SpecularAA.cpp" />
+    <ClCompile Include="PostProcessor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppSettings.h" />
+    <ClInclude Include="MeshRenderer.h" />
+    <ClInclude Include="SampleFramework11\Assert.h" />
+    <ClInclude Include="SampleFramework11\DDSTextureLoader.h" />
+    <ClInclude Include="SampleFramework11\DXErr.h" />
+    <ClInclude Include="SampleFramework11\FileIO.h" />
+    <ClInclude Include="SampleFramework11\GUIObject.h" />
+    <ClInclude Include="SampleFramework11\LodePNG\lodepng.h" />
+    <ClInclude Include="SampleFramework11\Math.h" />
+    <ClInclude Include="SampleFramework11\MurmurHash.h" />
+    <ClInclude Include="SampleFramework11\Profiler.h" />
+    <ClInclude Include="SampleFramework11\SDKmesh.h" />
+    <ClInclude Include="SampleFramework11\SH.h" />
+    <ClInclude Include="SampleFramework11\Slider.h" />
+    <ClInclude Include="PostProcessor.h" />
+    <ClInclude Include="SampleFramework11\App.h" />
+    <ClInclude Include="SampleFramework11\Camera.h" />
+    <ClInclude Include="SampleFramework11\DeviceStates.h" />
+    <ClInclude Include="SampleFramework11\DeviceManager.h" />
+    <ClInclude Include="SampleFramework11\Exceptions.h" />
+    <ClInclude Include="SampleFramework11\PostProcessorBase.h" />
+    <ClInclude Include="SampleFramework11\Skybox.h" />
+    <ClInclude Include="SampleFramework11\SpriteFont.h" />
+    <ClInclude Include="SampleFramework11\GraphicsTypes.h" />
+    <ClInclude Include="SampleFramework11\Input.h" />
+    <ClInclude Include="SampleFramework11\InterfacePointers.h" />
+    <ClInclude Include="SampleFramework11\Model.h" />
+    <ClInclude Include="SampleFramework11\PCH.h" />
+    <ClInclude Include="SampleFramework11\ShaderCompilation.h" />
+    <ClInclude Include="SampleFramework11\SpriteRenderer.h" />
+    <ClInclude Include="SampleFramework11\TextGUI.h" />
+    <ClInclude Include="SampleFramework11\Timer.h" />
+    <ClInclude Include="SampleFramework11\Utility.h" />
+    <ClInclude Include="SampleFramework11\WICTextureLoader.h" />
+    <ClInclude Include="SampleFramework11\Window.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SpecularAA.h" />
+    <ClInclude Include="SharedConstants.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DepthOnly.hlsl" />
+    <None Include="Mesh.hlsl" />
+    <None Include="PostProcessing.hlsl" />
+    <None Include="Icon.ico" />
+    <None Include="SampleFramework11\Shaders\Conversion.hlsl" />
+    <None Include="SampleFramework11\Shaders\DecodeTextureCS.hlsl" />
+    <None Include="SampleFramework11\Shaders\PPIncludes.hlsl" />
+    <None Include="SampleFramework11\Shaders\Quad.hlsl" />
+    <None Include="SampleFramework11\Shaders\SH.hlsl" />
+    <None Include="SampleFramework11\Shaders\Skybox.hlsl" />
+    <None Include="SampleFramework11\Shaders\Sprite.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SpecularAA.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SampleFramework11">
+      <UniqueIdentifier>{ee05aac5-2b95-4020-859a-0072125ba4a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SampleFramework11\Shaders">
+      <UniqueIdentifier>{760b8793-92a2-4827-8831-24a9ce051678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SampleFramework11\Graphics">
+      <UniqueIdentifier>{c152cdcc-2c22-4bf7-8403-9f82c3d4c0ad}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SampleFramework11\App.cpp">
+      <Filter>SampleFramework11</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleFramework11\Camera.cpp">
+      <Filter>SampleFramework11</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleFramework11\Input.cpp">
+      <Filter>SampleFramework11</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleFramework11\PCH.cpp">
+      <Filter>SampleFramework11</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleFramework11\Utility.cpp">
+      <Filter>SampleFramework11</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleFramework11\Window.cpp">
+      <Filter>SampleFramework11</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleFramework11\Timer.cpp">
+      <Filter>SampleFramework11</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleFramework11\GraphicsTypes.cpp">
+      <Filter>SampleFramework11\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleFramework11\SpriteFont.cpp">
+      <Filter>SampleFramework11\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleFramework11\SpriteRenderer.cpp">
+      <Filter>SampleFramework11\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleFramework11\Mesh.cpp">
+      <Filter>SampleFramework11\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleFramework11\DeviceStates.cpp">
+      <Filter>SampleFramework11\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleFramework11\DeviceManager.cpp">
+      <Filter>SampleFramework11\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleFramework11\ShaderCompilation.cpp">
+      <Filter>SampleFramework11\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="ToneMapping.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SampleFramework11\App.h">
+      <Filter>SampleFramework11</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleFramework11\Camera.h">
+      <Filter>SampleFramework11</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleFramework11\Exceptions.h">
+      <Filter>SampleFramework11</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleFramework11\Input.h">
+      <Filter>SampleFramework11</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleFramework11\InterfacePointers.h">
+      <Filter>SampleFramework11</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleFramework11\PCH.h">
+      <Filter>SampleFramework11</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleFramework11\Utility.h">
+      <Filter>SampleFramework11</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleFramework11\Window.h">
+      <Filter>SampleFramework11</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SampleFramework11\Timer.h">
+      <Filter>SampleFramework11</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleFramework11\GraphicsTypes.h">
+      <Filter>SampleFramework11\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleFramework11\SpriteRenderer.h">
+      <Filter>SampleFramework11\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleFramework11\SpriteFont.h">
+      <Filter>SampleFramework11\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleFramework11\Mesh.h">
+      <Filter>SampleFramework11\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleFramework11\DeviceStates.h">
+      <Filter>SampleFramework11\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleFramework11\DeviceManager.h">
+      <Filter>SampleFramework11\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleFramework11\ShaderCompilation.h">
+      <Filter>SampleFramework11\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="ToneMapping.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon.ico" />
+    <None Include="SampleFramework11\Shaders\Sprite.hlsl">
+      <Filter>SampleFramework11\Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ToneMapping.rc" />
+  </ItemGroup>
+</Project>

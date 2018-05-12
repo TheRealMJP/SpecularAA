@@ -1,0 +1,17 @@
+{
+    "folders":
+    [
+        {
+            "path": "/",
+            "name": "Local",
+            "file_exclude_patterns": ["*.sln", "*.vcxproj", "*.filters", "*.rc", "*.props", "*.user", "*.opensdf", "*.ico"],
+            "folder_exclude_patterns": ["Debug", "Release", "bin", "obj", "Properties", "ipch", "x64", "ShaderCache"]
+        }
+    ],
+    "settings":
+    {
+        "tab_size": 4,
+        "translate_tabs_to_spaces": true,
+        "trim_trailing_white_space_on_save": true
+    }
+}
