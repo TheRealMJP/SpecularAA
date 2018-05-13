@@ -132,7 +132,7 @@ void SolveVMF(float2 centerPos, uint numSamples, out VMF vmfs[NumVMFs], out floa
         }
 
         // Pre-compute roughness map values
-        vmfRoughness = sqrt(Roughness * Roughness + (1.0f / (2.0f * kappa)));
+        vmfRoughness = sqrt(Roughness * Roughness + (2.0f / kappa));
 
         float s = RoughnessToSpecPower(Roughness);
         float ft = r / lerp(s, 1.0f, r);

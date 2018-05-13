@@ -417,7 +417,7 @@ float3 CalcLightingVMF(in VMF vmfs[NumVMFs], in float3 lightDir, in float3 light
 
         // Calculate a new roughness value
         // (equation 21 in "Frequency Domain Normal Map Filtering")
-        float lobeRoughness = sqrt(roughness * roughness + 1.0f / (2.0f * kappa));
+        float lobeRoughness = sqrt(roughness * roughness + (2.0f / kappa));
         lighting += CalcLighting(normal, lightDir, lightColor, 0.0f,
                                  specularAlbedo, lobeRoughness, positionWS) * alpha;
 
