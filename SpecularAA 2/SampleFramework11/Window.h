@@ -22,8 +22,8 @@ class Window
 // Public types
 public:
 
-    typedef std::tr1::function<LRESULT (HWND, UINT, WPARAM, LPARAM)> MsgFunction;
-	typedef std::tr1::function<INT_PTR (HWND, UINT, WPARAM, LPARAM)> DlgFunction;
+    typedef std::function<LRESULT (HWND, UINT, WPARAM, LPARAM)> MsgFunction;
+	typedef std::function<INT_PTR (HWND, UINT, WPARAM, LPARAM)> DlgFunction;
 
 // Constructor and destructor
 public:

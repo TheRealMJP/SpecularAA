@@ -177,7 +177,9 @@ void Skybox::RenderCommon(  ID3D11DeviceContext* context,
         context->RSSetState(rastState);
         context->OMSetBlendState(blendState, blendFactor, 0xFFFFFFFF);
         context->OMSetDepthStencilState(dsState, 0);
-        context->PSSetSamplers(0, 1, &(samplerState.GetInterfacePtr()));
+
+        ID3D11SamplerState* samplers[] = { samplerState };
+        context->PSSetSamplers(0, 1, samplers);
     }
 
     // Get the viewports
@@ -213,7 +215,7 @@ void Skybox::RenderCommon(  ID3D11DeviceContext* context,
     // Set the shaders
     context->VSSetShader(vertexShader, NULL, 0);
     context->PSSetShader(ps, NULL, 0);
-    context->GSSetShader(rtIndex != 0 ? geometryShader : NULL, NULL, 0);
+    context->GSSetShader(rtIndex != 0 ? geometryShader : nullptr, NULL, 0);
     context->DSSetShader(NULL, NULL, 0);
     context->HSSetShader(NULL, NULL, 0);
 

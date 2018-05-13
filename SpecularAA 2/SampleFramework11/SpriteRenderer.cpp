@@ -201,10 +201,14 @@ void SpriteRenderer::Begin(ID3D11DeviceContext* deviceContext, FilterMode filter
     context->OMSetBlendState(alphaBlendState, blendFactor, 0xFFFFFFFF);
     context->OMSetDepthStencilState(dsState, 0);
 
-    if (filterMode == Linear)
-        context->PSSetSamplers(0, 1, &(linearSamplerState.GetInterfacePtr()));
-    else if (filterMode == Point)
-        context->PSSetSamplers(0, 1, &(pointSamplerState.GetInterfacePtr()));
+    ID3D11SamplerState* samplers[1] = { nullptr };
+
+    if(filterMode == Linear)
+        samplers[0] = linearSamplerState;
+    else if(filterMode == Point)
+        samplers[0] = pointSamplerState;
+
+    context->PSSetSamplers(0, 1, samplers);
 
     // Set the shaders
     context->PSSetShader(pixelShader, NULL, 0);

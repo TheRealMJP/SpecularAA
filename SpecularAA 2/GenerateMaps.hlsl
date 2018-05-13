@@ -33,10 +33,10 @@ cbuffer Constants : register(b0)
 Texture2D<float4> NormalMap : register(t0);
 
 // Outputs
-RWTexture2DArray<float4> OutputLEANMap : register(u0);
+RWTexture2DArray<snorm float4> OutputLEANMap : register(u0);
 RWTexture2D<float4> OutputVMFMap : register(u0);
 RWTexture2DArray<float4> OutputVMFArrayMap : register(u0);
-RWTexture2D<float2> OutputRoughnessMap : register(u1);
+RWTexture2D<unorm float2> OutputRoughnessMap : register(u1);
 
 float FilterBox(in float x)
 {

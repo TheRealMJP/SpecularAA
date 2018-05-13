@@ -11,7 +11,7 @@
 // ================================================================================================
 // Constant buffers
 // ================================================================================================
-cbuffer VSConstants : register(cb0)
+cbuffer VSConstants : register(b0)
 {
     float4x4 World;
 	float4x4 View;
@@ -42,12 +42,4 @@ VSOutput VS(in VSInput input)
     output.PositionCS = mul(input.PositionOS, WorldViewProjection);
 
     return output;
-}
-
-// ================================================================================================
-// Pixel Shader
-// ================================================================================================
-float4 PS() : SV_Target
-{
-    return float4(0.0f, 0.0f, 0.0f, 1.0f);
 }

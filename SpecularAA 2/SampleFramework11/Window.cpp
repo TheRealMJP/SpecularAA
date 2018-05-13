@@ -14,9 +14,9 @@
 using std::wstring;
 using std::vector;
 using std::map;
-using std::tr1::function;
-using std::tr1::bind;
-using std::tr1::mem_fn;
+using std::function;
+using std::bind;
+using std::mem_fn;
 
 namespace SampleFramework11
 {

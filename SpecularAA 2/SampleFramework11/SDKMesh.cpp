@@ -125,7 +125,7 @@ HRESULT SDKMesh::CreateFromMemory( BYTE* pData,
     if( m_pMeshHeader->Version != SDKMESH_FILE_VERSION )
     {
         hr = E_NOINTERFACE;
-        goto Error;
+        return hr;
     }
 
     // Setup buffer data pointer
@@ -155,7 +155,6 @@ HRESULT SDKMesh::CreateFromMemory( BYTE* pData,
     }
 
     hr = S_OK;
-Error:
 
     return hr;
 }

@@ -43,14 +43,14 @@ static const uint NumCascades = 4;
 //=================================================================================================
 // Constant buffers
 //=================================================================================================
-cbuffer VSConstants : register(cb0)
+cbuffer VSConstants : register(b0)
 {
     float4x4 World;
 	float4x4 View;
     float4x4 WorldViewProjection;
 }
 
-cbuffer PSConstants : register(cb0)
+cbuffer PSConstants : register(b0)
 {
     float3 LightDirWS;
     float3 LightColor;

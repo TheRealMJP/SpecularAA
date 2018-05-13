@@ -17,9 +17,9 @@
 #include "LodePNG/lodepng.h"
 #include "FileIO.h"
 
-using std::tr1::bind;
-using std::tr1::mem_fn;
-using namespace std::tr1::placeholders;
+using std::bind;
+using std::mem_fn;
+using namespace std::placeholders;
 
 namespace SampleFramework11
 {

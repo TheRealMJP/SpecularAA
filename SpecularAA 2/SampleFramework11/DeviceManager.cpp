@@ -115,7 +115,8 @@ void DeviceManager::AfterReset()
     DXCall(device->CreateRenderTargetView(bbTexture, NULL, &bbRTView));
 
     // Set default render targets
-    immediateContext->OMSetRenderTargets(1, &(bbRTView.GetInterfacePtr()), NULL);
+    ID3D11RenderTargetView* rtvs[] = { bbRTView };
+    immediateContext->OMSetRenderTargets(1, rtvs, NULL);
 
     // Setup the viewport
     D3D11_VIEWPORT vp;
