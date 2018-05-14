@@ -47,9 +47,10 @@ void App::Run()
     {
         Initialize();
 
-        window.ShowWindow();
-
+        window.SetClientArea(deviceManager.BackBufferWidth(), deviceManager.BackBufferHeight());
         deviceManager.Initialize(window);
+
+        window.ShowWindow();
 
         blendStates.Initialize(deviceManager.Device());
         rasterizerStates.Initialize(deviceManager.Device());

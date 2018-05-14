@@ -28,11 +28,6 @@
 using namespace SampleFramework11;
 using std::wstring;
 
-const uint32 WindowWidth = 1280;
-const uint32 WindowHeight = 720;
-const float WindowWidthF = static_cast<float>(WindowWidth);
-const float WindowHeightF = static_cast<float>(WindowHeight);
-
 const Float3 SunColor = Float3(10.0f, 8.0f, 5.0f) * 0;
 const Float3 SunDirection = Float3::Normalize(Float3(0.2f, 0.977f, -0.4f));
 
@@ -43,13 +38,9 @@ static const float ModelScale = 1.0f;
 static const Float4x4 ModelWorldMatrix = XMMatrixScaling(ModelScale, ModelScale, ModelScale) * XMMatrixRotationY(XM_PI);
 
 SpecularAA::SpecularAA() :  App(L"Specular AA", MAKEINTRESOURCEW(IDI_DEFAULT)),
-    camera(WindowWidthF / WindowHeightF, Pi_4 * 0.75f, NearClip, FarClip)
+    camera(16.0f / 9.0f, Pi_4 * 0.75f, NearClip, FarClip)
 {
-    deviceManager.SetBackBufferWidth(WindowWidth);
-    deviceManager.SetBackBufferHeight(WindowHeight);
     deviceManager.SetMinFeatureLevel(D3D_FEATURE_LEVEL_11_0);
-
-    window.SetClientArea(WindowWidth, WindowHeight);
 }
 
 void SpecularAA::BeforeReset()
@@ -96,7 +87,16 @@ void SpecularAA::LoadContent()
     spriteRenderer.Initialize(device);
 
     // Camera setup
-    camera.SetPosition(Float3(0, 2.5f, -10.0f));
+    camera.SetPosition(Float3(0, 1.0f, -10.0f));
+
+    // Overhead testing position for comparison image generation
+    // camera.SetPosition(Float3(0, 20.0f, 0.0f));
+    // camera.SetXRotation(Pi_2);
+
+    // Grazing angle position for comparison image generation
+    // camera.SetPosition(Float3(-2.88731456f, 0.619826376f, -6.39299107f));
+    // camera.SetXRotation(0.0616500117f);
+    // camera.SetYRotation(0.472924948f);
 
     // Load the tank scene
     model.GeneratePlaneScene(device, Float2(5.0f, 5.0f), Float3(), Quaternion());
