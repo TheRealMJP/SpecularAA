@@ -242,7 +242,8 @@ void SpecularAA::RenderMainPass()
 
     context->OMSetRenderTargets(1, renderTargets, ds);
 
-    context->ClearRenderTargetView(renderTargets[0], reinterpret_cast<float*>(&XMFLOAT4(0, 0, 0, 0)));
+    float clearColor[] = {0.0f, 0.0f, 0.0f, 0.0f};
+    context->ClearRenderTargetView(renderTargets[0], clearColor);
     context->ClearDepthStencilView(ds, D3D11_CLEAR_DEPTH|D3D11_CLEAR_STENCIL, 1.0f, 0);
 
     RenderModel();

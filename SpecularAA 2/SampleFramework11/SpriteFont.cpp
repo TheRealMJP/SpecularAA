@@ -175,7 +175,8 @@ void SpriteFont::Initialize(LPCWSTR fontName, float fontSize, UINT fontStyle, bo
 
         // Lock the bitmap for direct memory access
         BitmapData bmData;
-        GdiPlusCall(textBitmap.LockBits(&Rect(0, 0, TexWidth, texHeight), ImageLockModeRead, PixelFormat32bppARGB, &bmData));
+        Rect bmRect = Rect(0, 0, TexWidth, texHeight);
+        GdiPlusCall(textBitmap.LockBits(&bmRect, ImageLockModeRead, PixelFormat32bppARGB, &bmData));
 
         // Create a D3D texture, initalized with the bitmap data
         D3D11_TEXTURE2D_DESC texDesc;
